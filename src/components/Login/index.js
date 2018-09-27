@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { Form, Input, Button, Card, Checkbox } from 'antd';
 import InlineError from '../messages/InlineError';
 import { loginUser } from "../../redux/actions/auth";
+import DocUpload from './DocUpload';
+
 
 class Login extends Component {
 
@@ -75,7 +77,13 @@ class Login extends Component {
                         <p><Link to={{pathname: "/signup"}}>SignUp</Link></p>
                     </Form>
                 </Card>
+
+                <DocUpload />
+
             </div>
+
+
+
          );
     }
 }

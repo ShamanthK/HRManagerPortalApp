@@ -1,22 +1,25 @@
 import * as firebase from 'firebase';
 
+//import firebase from 'firebase/app';
+//import 'firebase/storage';
+
 // Initialize Firebase
   const prodConfig = {
-    apiKey: "AIzaSyAzFE2PUqupVMsH_TIMqQoHTq0IjOVS3Xg",
-    authDomain: "hrmanager-8f146.firebaseapp.com",
-    databaseURL: "https://hrmanager-8f146.firebaseio.com",
-    projectId: "hrmanager-8f146",
-    storageBucket: "hrmanager-8f146.appspot.com",
-    messagingSenderId: "752182474971"
+      apiKey: "AIzaSyCItthTSRaT8_Jt1vqmMknYOTJdCalFnFY",
+      authDomain: "hrmanagerapp-ae345.firebaseapp.com",
+      databaseURL: "https://hrmanagerapp-ae345.firebaseio.com",
+      projectId: "hrmanagerapp-ae345",
+      storageBucket: "hrmanagerapp-ae345.appspot.com",
+      messagingSenderId: "16989206440"
   };
 
   const devConfig = {
-    apiKey: "AIzaSyAzFE2PUqupVMsH_TIMqQoHTq0IjOVS3Xg",
-    authDomain: "hrmanager-8f146.firebaseapp.com",
-    databaseURL: "https://hrmanager-8f146.firebaseio.com",
-    projectId: "hrmanager-8f146",
-    storageBucket: "hrmanager-8f146.appspot.com",
-    messagingSenderId: "752182474971"
+    apiKey: "AIzaSyCItthTSRaT8_Jt1vqmMknYOTJdCalFnFY",
+    authDomain: "hrmanagerapp-ae345.firebaseapp.com",
+    databaseURL: "https://hrmanagerapp-ae345.firebaseio.com",
+    projectId: "hrmanagerapp-ae345",
+    storageBucket: "hrmanagerapp-ae345.appspot.com",
+    messagingSenderId: "16989206440"
 };
 
 const config = process.env.NODE_ENV === 'production'
@@ -31,7 +34,8 @@ const config = process.env.NODE_ENV === 'production'
   const auth = firebase.auth();
   const db = firebase.database();
 
+
+
   export {
-    auth,
-    db
+    auth, db as default
   };
